@@ -66,6 +66,20 @@
             border-radius: 4px;
             font-weight: 700;
         }
+        .section-with-image {
+            display: flex;
+            gap: 2rem;
+            align-items: flex-start;
+        }
+        .section-with-image img {
+            width: 300px;
+            height: auto;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+        .section-content {
+            flex: 1;
+        }
         footer {
             text-align: center;
             padding: 1rem;
@@ -93,22 +107,32 @@
             <p>67 Megasport bietet professionelles Outdoor HIIT (High Intensity Interval Training) an. Unsere Trainings sind energiegeladen, effektiv und finden in der freien Natur statt. Egal ob Einsteiger oder Fortgeschrittener – bei uns findest du das richtige Programm.</p>
         </section>
         <section id="me" class="about">
-            <h2>Über mich</h2>
-            <p>Ich bin Lara B, 25 Jahre jung und komme aus der Region Liestal. Sport zu tun ist meine Art frei zu sein. Und genau darum liebe ich es. Ich studiere Sportwissenschaft und habe bisher Outdoor-HIIT (High intensity interval Training) unterrichtet.
-            <br>Ich biete 2 Kurse an und damit du dabei sein kannst melde dich gleich unten per Mail an!</p>
-            <div class="cta">
-                <button id="contactBtn">Kontakt</button>
-                <p id="email" style="display:none; margin-top:1rem; font-weight:700;">Sende mir deine Anfrage per Mail an: Lara.67@MegaSport.ch</p>
+            <div class="section-with-image">
+                <div class="section-content">
+                    <h2>Über mich</h2>
+                    <p>Ich bin Lara B, 25 Jahre jung und komme aus der Region Liestal. Sport zu tun ist meine Art frei zu sein. Und genau darum liebe ich es. Ich studiere Sportwissenschaft und habe bisher Outdoor-HIIT (High intensity interval Training) unterrichtet.
+                    <br>Ich biete 2 Kurse an und damit du dabei sein kannst melde dich gleich unten per Mail an!</p>
+                    <div class="cta">
+                        <button id="contactBtn">Kontakt</button>
+                        <p id="email" style="display:none; margin-top:1rem; font-weight:700;">Lara.67@MegaSport.ch</p>
+                    </div>
+                </div>
+                <img src="Bilder/Lara B..jpg" alt="Lara B.">
             </div>
         </section>
         <section id="philosophy" class="services">
-            <h2>Trainingsphilosophie</h2>
-            <ul>
-                <li>Draussen trainieren - bei jedem Wetter</li>
-                <li>Kurze, intensive HIIT-Einheiten</li>
-                <li>Saubere Technik vor Geschwindigkeit</li>
-                <li>Low Equipment, High Impact</li>
-            </ul>
+            <div class="section-with-image">
+                <img src="Bilder/Gruppe Krafttraining.jpg" alt="Gruppe Krafttraining">
+                <div class="section-content">
+                    <h2>Trainingsphilosophie</h2>
+                    <ul>
+                        <li>Draussen trainieren - bei jedem Wetter</li>
+                        <li>Kurze, intensive HIIT-Einheiten</li>
+                        <li>Saubere Technik vor Geschwindigkeit</li>
+                        <li>Low Equipment, High Impact</li>
+                    </ul>
+                </div>
+            </div>
         </section>
         <section id="schedule" class="services">
             <h2>Trainingszeiten</h2>
