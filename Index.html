@@ -91,13 +91,30 @@
             <h2>Über 67 Megasport</h2>
             <p>67 Megasport bietet professionelles Outdoor HIIT (High Intensity Interval Training) an. Unsere Trainings sind energiegeladen, effektiv und finden in der freien Natur statt. Egal ob Einsteiger oder Fortgeschrittener – bei uns findest du das richtige Programm.</p>
         </section>
-        <section id="services" class="services">
-            <h2>Unsere Angebote</h2>
+        <section id="me" class="about">
+            <h2>Über mich</h2>
+            <p>Ich bin Lara B, 25 Jahre jung und komme aus der Region Liestal. Sport zu tun ist meine Art frei zu sein. Und genau darum liebe ich es. Ich studiere Sportwissenschaft und habe bisher Outdoor-HIIT (High intensity interval Training) unterrichtet.
+            <br>Ich biete 2 Kurse an und damit du dabei sein kannst melde dich gleich unten per Mail an!</p>
+            <div class="cta">
+                <button id="contactBtn">Kontakt</button>
+                <p id="email" style="display:none; margin-top:1rem; font-weight:700;">Lara.67@MegaSport.ch</p>
+            </div>
+        </section>
+        <section id="philosophy" class="services">
+            <h2>Trainingsphilosophie</h2>
             <ul>
-                <li>Gruppentraining im Park</li>
-                <li>Personal Training</li>
-                <li>Spezielle Einheiten für Ausdauer, Kraft und Mobilität</li>
+                <li>Draussen trainieren - bei jedem Wetter</li>
+                <li>Kurze, intensive HIIT-Einheiten</li>
+                <li>Saubere Technik vor Geschwindigkeit</li>
+                <li>Low Equipment, High Impact</li>
             </ul>
+        </section>
+        <section id="schedule" class="services">
+            <h2>Trainingszeiten</h2>
+            <!-- Diagramm-Platzhalter -->
+            <div class="diagram-placeholder" style="height:300px; background:#e0e0e0; display:flex; align-items:center; justify-content:center; color:#666; font-style:italic;">
+                Hier kommt das Diagramm
+            </div>
         </section>
         <div class="cta">
             <a href="#contact">Jetzt anmelden</a>
@@ -106,6 +123,17 @@
     <footer>
         <p>&copy; 2026 67 Megasport. Alle Rechte vorbehalten.</p>
         <p id="contact">Kontakt: info@67megasport.ch</p>
+        <p style="font-size:0.8rem; color:#bbb; margin-top:1rem;">Diese Website ist ein Schulprojekt!</p>
     </footer>
+    <script>
+        document.getElementById('contactBtn').addEventListener('click', function() {
+            var email = document.getElementById('email');
+            if (email.style.display === 'none') {
+                email.style.display = 'block';
+            } else {
+                email.style.display = 'none';
+            }
+        });
+    </script>
 </body>
 </html>
